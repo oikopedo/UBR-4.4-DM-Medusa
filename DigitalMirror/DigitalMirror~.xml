@@ -1,5 +1,5 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-Medusa\DigitalMirror\DigitalMirror.v4p" systemname="DigitalMirror" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\DigitalMirror.v4p">
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\DigitalMirror.v4p" systemname="DigitalMirror" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\DigitalMirror.v4p">
    <BOUNDS type="Window" left="0" top="0" width="8475" height="15600">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
@@ -95,7 +95,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2460" top="4440" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="9090" top="2565" width="14400" height="15600">
+   <BOUNDS type="Window" left="10755" top="1920" width="14400" height="15600">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>

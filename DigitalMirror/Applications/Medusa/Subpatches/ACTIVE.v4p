@@ -1,0 +1,147 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\Applications\Medusa\Subpatches\ACTIVE.v4p" systemname="ACTIVE" filename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\Applications\Medusa\Subpatches\ACTIVE.v4p">
+   <BOUNDS type="Window" left="13005" top="6960" width="9000" height="6000">
+   </BOUNDS>
+   <NODE systemname="Head_tracking" filename="Head_tracking.v4p" componentmode="Hidden" id="0" nodename="Head_tracking.v4p">
+   <BOUNDS type="Node" left="6450" top="6030" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="6450" top="6030" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="11070" top="6885" width="9000" height="6000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Audio_recognition" filename="Audio_recognition.v4p" componentmode="Hidden" id="1" nodename="Audio_recognition.v4p">
+   <BOUNDS type="Node" left="8340" top="6030" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="8340" top="6030" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12045" top="6105" width="9000" height="6000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Hand_tracking" filename="Hand_tracking.v4p" componentmode="Hidden" id="2" nodename="Hand_tracking.v4p">
+   <BOUNDS type="Node" left="10410" top="6045" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="10410" top="6045" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="17505" top="9105" width="9000" height="6000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Body_tracking" filename="Body_tracking.v4p" componentmode="Hidden" id="3" nodename="Body_tracking.v4p">
+   <BOUNDS type="Node" left="12420" top="6060" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="12420" top="6060" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="12495" top="7560" width="9000" height="6000">
+   </BOUNDS>
+   </NODE>
+   <NODE systemname="Select (String)" nodename="Select (String)" componentmode="Hidden" id="8">
+   <BOUNDS type="Node" left="6765" top="8970" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   <PIN pinname="Select">
+   </PIN>
+   </NODE>
+   <NODE systemname="S (String Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="S (String Advanced)" componentmode="Hidden" id="7">
+   <BOUNDS type="Node" left="6780" top="9480" width="1245" height="270">
+   </BOUNDS>
+   <PIN pinname="Input" visible="1">
+   </PIN>
+   <PIN pinname="Send String" visible="1">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="State">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="6" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="7950" top="8880" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7950" top="8880" width="945" height="255">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="|Send State|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="send">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="Output String" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="5" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6750" top="8190" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6750" top="8190" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="String Type" slicecount="1" values="MultiLine">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Input">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="4" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7935" top="8250" width="795" height="240">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7935" top="8250" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Integer">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="Hit">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="5" srcpinname="Output String" dstnodeid="8" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="8" dstpinname="Select">
+   </LINK>
+   <LINK srcnodeid="8" srcpinname="Output" dstnodeid="7" dstpinname="Input">
+   </LINK>
+   <LINK srcnodeid="6" srcpinname="Output String" dstnodeid="7" dstpinname="Send String">
+   </LINK>
+   <NODE systemname="Kinect (Devices Microsoft)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.MSKinect.dll" nodename="Kinect (Devices Microsoft)" componentmode="Hidden" id="11">
+   <BOUNDS type="Node" left="7440" top="1005" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   </NODE>
+   <NODE systemname="Skeleton (Kinect Microsoft)" filename="%VVVV%\addonpack\lib\nodes\plugins\VVVV.Nodes.MSKinect.dll" nodename="Skeleton (Kinect Microsoft)" componentmode="Hidden" id="10">
+   <BOUNDS type="Node" left="7455" top="1545" width="100" height="100">
+   </BOUNDS>
+   <PIN pinname="Kinect Runtime" visible="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="11" srcpinname="Kinect Runtime" dstnodeid="10" dstpinname="Kinect Runtime">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="9" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7785" top="2085" width="795" height="720">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7785" top="2085" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Vector Size" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Y Input Value">
+   </PIN>
+   <PIN pinname="Descriptive Name" slicecount="1" values="PositionXYZ">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="10" srcpinname="PositionXYZ" dstnodeid="9" dstpinname="Y Input Value">
+   </LINK>
+   </PATCH>

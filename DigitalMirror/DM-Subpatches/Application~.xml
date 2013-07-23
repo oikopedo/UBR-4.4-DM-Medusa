@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-Medusa\DigitalMirror\DM-Subpatches\Application.v4p" systemname="Application" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\Subpatches\Application.v4p">
-   <BOUNDS type="Window" left="9090" top="2565" width="14400" height="15600">
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\DM-Subpatches\Application.v4p" systemname="Application" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\Subpatches\Application.v4p">
+   <BOUNDS type="Window" left="10755" top="1920" width="14400" height="15600">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="2160" top="4080" width="0" height="0">
@@ -53,7 +53,7 @@
    </PIN>
    <PIN pinname="Layer" visible="1">
    </PIN>
-   <BOUNDS type="Window" left="9090" top="2565" width="14400" height="15600">
+   <BOUNDS type="Window" left="10755" top="1920" width="14400" height="15600">
    </BOUNDS>
    </NODE>
    <LINK srcnodeid="4" srcpinname="Y Output Value" dstnodeid="5" dstpinname="Touch iXY">

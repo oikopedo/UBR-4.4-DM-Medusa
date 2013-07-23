@@ -1,5 +1,5 @@
-<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta29.2.dtd" >
-   <PATCH nodename="C:\Users\Uberact\Documents\GitHub\UBE-4-DM-DigitalMirror\DigitalMirror\DM-Subpatches\Touch Tracking\Touch-Tracking.v4p" systemname="Touch-Tracking" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\DM-Subpatches\Touch Tracking\Touch-Tracking.v4p">
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\DM-Subpatches\Touch Tracking\Touch-Tracking.v4p" systemname="Touch-Tracking" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\DM-Subpatches\Touch Tracking\Touch-Tracking.v4p">
    <BOUNDS type="Window" left="0" top="0" width="14625" height="15600">
    </BOUNDS>
    <NODE systemname="IOBox (Value Advanced)" nodename="IOBox (Value Advanced)" componentmode="InABox" id="0">
@@ -25,7 +25,7 @@
    <NODE systemname="Touch-Simulator" filename="Subpatches\Touch Simulator\Touch-Simulator.v4p" nodename="Subpatches\Touch Simulator\Touch-Simulator.v4p" componentmode="InAWindow" id="2">
    <BOUNDS type="Node" left="1170" top="4050" width="8010" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="8550" top="8595" width="4575" height="4950">
+   <BOUNDS type="Window" left="11955" top="9150" width="4575" height="4950">
    </BOUNDS>
    <PIN pinname="AspectRatio" visible="1">
    </PIN>

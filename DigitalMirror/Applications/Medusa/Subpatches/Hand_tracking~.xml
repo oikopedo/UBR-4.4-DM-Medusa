@@ -1,0 +1,5 @@
+<!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\Applications\Medusa\Subpatches\Hand_tracking.v4p" systemname="Hand_tracking" filename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\Applications\Medusa\Subpatches\Hand_tracking.v4p">
+   <BOUNDS type="Window" left="18090" top="8310" width="9000" height="6000">
+   </BOUNDS>
+   </PATCH>

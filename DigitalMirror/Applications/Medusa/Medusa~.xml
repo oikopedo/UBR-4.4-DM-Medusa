@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-Medusa\DigitalMirror\Applications\Application Template\Medusa.v4p" systemname="Medusa" filename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-Medusa\DigitalMirror\Applications\Application Template\Medusa.v4p">
-   <BOUNDS type="Window" left="0" top="0" width="14400" height="15600">
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\Applications\Medusa\Medusa.v4p" systemname="Medusa" filename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-Medusa\DigitalMirror\Applications\Application Template\Medusa.v4p">
+   <BOUNDS type="Window" left="10755" top="1920" width="14400" height="15600">
    </BOUNDS>
    <NODE nodename="IOBox (Node)" componentmode="InABox" id="1" systemname="IOBox (Node)">
    <BOUNDS type="Node" left="780" top="5625" width="0" height="0">
@@ -71,5 +71,97 @@
    </PIN>
    </NODE>
    <LINK srcnodeid="2" srcpinname="Y Output Value" dstnodeid="11" dstpinname="XYZ">
+   </LINK>
+   <NODE systemname="R (Value Advanced)" filename="%VVVV%\addonpack\lib\nodes\plugins\RSNodes.dll" nodename="R (Value Advanced)" componentmode="Hidden" id="26">
+   <BOUNDS type="Node" left="14865" top="3525" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14865" top="3525">
+   </BOUNDS>
+   <PIN pinname="Output" visible="1">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="25" systemname="IOBox (String)">
+   <BOUNDS type="Node" left="14865" top="2970" width="0" height="0">
+   </BOUNDS>
+   <BOUNDS type="Box" left="14865" top="2970" width="795" height="240">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="1" values="Reset">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="send">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="25" srcpinname="Output String" dstnodeid="26" dstpinname="Receive String">
+   </LINK>
+   <NODE id="12" systemname="State" filename="Modules\State.v4p" componentmode="Hidden" nodename="Modules\State.v4p" hiddenwhenlocked="0" managers="">
+   <BOUNDS type="Node" left="7350" top="3705" width="100" height="100">
+   </BOUNDS>
+   <BOUNDS type="Box" left="7350" top="3705" width="4800" height="3600">
+   </BOUNDS>
+   <BOUNDS type="Window" left="16755" top="8310" width="9000" height="6000">
+   </BOUNDS>
+   <PIN pinname="Descriptive Name" pintype="Configuration" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Evaluate" pintype="Input" visible="-1" slicecount="1" values="1">
+   </PIN>
+   <PIN pinname="Window Handle" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Patch" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="ID" pintype="Output" visible="-1">
+   </PIN>
+   <PIN pinname="Hit" slicecount="1" visible="1" values="0">
+   </PIN>
+   </NODE>
+   <NODE nodename="IOBox (String)" componentmode="InABox" id="27" systemname="IOBox (String)">
+   <BOUNDS type="Box" left="6765" top="1815" width="1035" height="1035">
+   </BOUNDS>
+   <BOUNDS type="Node" left="6765" top="1815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Input String" slicecount="3" values="|IDLE&tab;|,ACTIVE,|GOOD BYE|">
+   </PIN>
+   <PIN pinname="Default" slicecount="1" values="text">
+   </PIN>
+   <PIN pinname="File Mask" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Maximum Characters" slicecount="1" values="-1">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="27" srcpinname="Output String" dstnodeid="12" dstpinname="State List">
+   </LINK>
+   <NODE nodename="IOBox (Value Advanced)" componentmode="InABox" id="31" systemname="IOBox (Value Advanced)">
+   <BOUNDS type="Box" left="7800" top="1815" width="1050" height="1035">
+   </BOUNDS>
+   <BOUNDS type="Node" left="7800" top="1815" width="0" height="0">
+   </BOUNDS>
+   <PIN pinname="Y Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Units" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Precision" slicecount="1" values="4">
+   </PIN>
+   <PIN pinname="Value Type" slicecount="1" values="Boolean">
+   </PIN>
+   <PIN pinname="Behavior" slicecount="1" values="Bang">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="3" values="0,0,0">
+   </PIN>
+   <PIN pinname="Rows" slicecount="1" values="3">
+   </PIN>
+   <PIN pinname="SliceCount Mode" slicecount="1" values="ColsRowsPages">
+   </PIN>
+   <PIN pinname="Show Grid" slicecount="1" values="1">
+   </PIN>
+   </NODE>
+   <LINK srcnodeid="31" srcpinname="Y Output Value" dstnodeid="12" dstpinname="Hit">
    </LINK>
    </PATCH>
