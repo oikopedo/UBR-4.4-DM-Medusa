@@ -1,6 +1,6 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
-   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-Medusa\DigitalMirror\DM-Subpatches\Face Tracking\Subpatches\Face Simulator\Face-Simulator.v4p" locked="1" bgcolor="12768097">
-   <BOUNDS height="4950" left="8550" top="8595" type="Window" width="4575">
+   <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\DM-Subpatches\Face Tracking\Subpatches\Face Simulator\Face-Simulator.v4p" locked="1" bgcolor="12768097">
+   <BOUNDS height="4950" left="50715" top="5595" type="Window" width="4575">
    </BOUNDS>
    <NODE componentmode="InABox" id="22" nodename="IOBox (Value Advanced)" systemname="IOBOX (VALUE ADVANCED)" hiddenwhenlocked="0">
    <BOUNDS height="0" left="75" top="795" type="Node" width="0">

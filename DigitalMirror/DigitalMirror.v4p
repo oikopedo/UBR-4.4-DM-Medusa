@@ -1,13 +1,13 @@
 <!DOCTYPE PATCH  SYSTEM "http://vvvv.org/versions/vvvv45beta30.2.dtd" >
    <PATCH nodename="C:\Users\vasilis\Documents\GitHub\UBR-4.4-DM-VA\DigitalMirror\DigitalMirror.v4p" systemname="DigitalMirror" filename="D:\GitHub W8\UBE-4-DM-DigitalMirror\DigitalMirror\DigitalMirror.v4p">
-   <BOUNDS type="Window" left="1260" top="210" width="8475" height="15600">
+   <BOUNDS type="Window" left="150" top="0" width="14865" height="16380">
    </BOUNDS>
    <NODE systemname="Renderer (EX9)" nodename="Renderer (EX9)" componentmode="InAWindow" id="0">
    <BOUNDS type="Node" left="2475" top="7575" width="100" height="100">
    </BOUNDS>
    <BOUNDS type="Box" left="2475" top="7575" width="2400" height="1800">
    </BOUNDS>
-   <BOUNDS type="Window" left="17595" top="150" width="9375" height="14880">
+   <BOUNDS type="Window" left="15255" top="7695" width="12750" height="8025">
    </BOUNDS>
    <PIN pinname="Layers" visible="1" slicecount="1" values="||">
    </PIN>
@@ -20,6 +20,12 @@
    <PIN pinname="X" visible="1">
    </PIN>
    <PIN pinname="Y" visible="1">
+   </PIN>
+   <PIN pinname="Aspect Ratio" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="View" visible="1" slicecount="1" values="||">
+   </PIN>
+   <PIN pinname="Fullscreen" slicecount="1" values="0">
    </PIN>
    </NODE>
    <NODE systemname="AspectRatio (Transform)" nodename="AspectRatio (Transform)" componentmode="Hidden" id="2">
@@ -95,7 +101,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="2460" top="4440" width="4800" height="3600">
    </BOUNDS>
-   <BOUNDS type="Window" left="17415" top="4680" width="14400" height="15600">
+   <BOUNDS type="Window" left="1920" top="4185" width="29040" height="16380">
    </BOUNDS>
    <PIN pinname="Layer" visible="1" slicecount="1" values="||">
    </PIN>
@@ -221,7 +227,7 @@
    </BOUNDS>
    <BOUNDS type="Box" left="3675" top="255" width="1185" height="900">
    </BOUNDS>
-   <PIN pinname="Y Input Value" slicecount="1" values="1">
+   <PIN pinname="Y Input Value" slicecount="1" values="0">
    </PIN>
    <PIN pinname="Units" slicecount="1" values="||">
    </PIN>
@@ -232,6 +238,8 @@
    <PIN pinname="Behavior" slicecount="1" values="Toggle">
    </PIN>
    <PIN pinname="Descriptive Name" slicecount="1" values="|Face Simulator|">
+   </PIN>
+   <PIN pinname="X Input Value" slicecount="1" values="0">
    </PIN>
    </NODE>
    <LINK srcnodeid="17" srcpinname="Y Output Value" dstnodeid="9" dstpinname="Face Simulator">
@@ -251,7 +259,7 @@
    </BOUNDS>
    <PIN pinname="Descriptive Name" slicecount="1" values="TTY">
    </PIN>
-   <BOUNDS type="Window" left="8460" top="13560" width="6045" height="2040">
+   <BOUNDS type="Window" left="49920" top="12495" width="6045" height="2040">
    </BOUNDS>
    </NODE>
    <NODE systemname="PerfMeter (Debug)" filename="%VVVV%\lib\nodes\modules\Debug\PerfMeter (Debug).v4p" nodename="PerfMeter (Debug)" componentmode="Hidden" id="19" hiddenwhenlocked="1">

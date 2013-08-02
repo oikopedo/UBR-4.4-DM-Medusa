@@ -25,7 +25,7 @@
    <NODE systemname="Touch-Simulator" filename="Subpatches\Touch Simulator\Touch-Simulator.v4p" nodename="Subpatches\Touch Simulator\Touch-Simulator.v4p" componentmode="InAWindow" id="2">
    <BOUNDS type="Node" left="1170" top="4050" width="8010" height="270">
    </BOUNDS>
-   <BOUNDS type="Window" left="11955" top="9150" width="4575" height="4950">
+   <BOUNDS type="Window" left="50715" top="5595" width="4575" height="4950">
    </BOUNDS>
    <PIN pinname="AspectRatio" visible="1">
    </PIN>
